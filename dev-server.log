@@ -1,0 +1,38 @@
+
+> links-astro@0.0.1 dev
+> astro dev --host 127.0.0.1
+
+[vite] connected.
+[2m09:33:52[22m [34m[types][39m Generated [2m1ms[22m
+[42m[1m astro [22m[49m [32mv6.3.7[39m [2mready in[22m 1294 [2mms[22m
+[2m┃[22m Local    [36mhttp://127.0.0.1:4321/[39m
+[2m09:33:52[22m [32mwatching for file changes...[39m
+[2m09:34:00[22m [34m[200][39m /liturgia-diaria [2m24ms[22m
+[2m09:34:34[22m [34m[200][39m /liturgia-diaria [2m6ms[22m
+[2m09:35:52[22m [34m[200][39m /liturgia-diaria [2m12ms[22m
+[2m09:36:29[22m [34m[200][39m / [2m10ms[22m
+[2m09:37:00[22m [34m[200][39m /liturgia-diaria [2m5ms[22m
+[2m09:37:00[22m [34m[200][39m / [2m4ms[22m
+[2m09:37:00[22m [34m[200][39m /liturgia-diaria [2m3ms[22m
+[2m09:37:06[22m [34m[200][39m /liturgia-diaria [2m5ms[22m
+[2m09:37:50[22m [34m[200][39m /liturgia-diaria [2m5ms[22m
+[2m09:37:50[22m [34m[200][39m /liturgia-diaria [2m6ms[22m
+[2m09:37:51[22m [34m[200][39m / [2m4ms[22m
+[2m09:37:51[22m [34m[200][39m /liturgia-diaria [2m3ms[22m
+[2m09:37:57[22m [34m[200][39m /liturgia-diaria [2m3ms[22m
+[2m09:38:15[22m [34m[200][39m /liturgia-diaria [2m3ms[22m
+[2m09:38:29[22m [34m[200][39m / [2m4ms[22m
+[2m09:38:32[22m [34m[200][39m /liturgia-diaria [2m3ms[22m
+[2m09:43:46[22m [34m[watch][39m /src/pages/liturgia-diaria.astro?astro&type=style&index=0&lang.css
+[2m09:43:46[22m [34m[watch][39m src/pages/liturgia-diaria.astro
+[vite] program reload
+[2m09:45:02[22m [34m[watch][39m src/pages/liturgia-diaria.astro
+[2m09:45:24[22m [34m[watch][39m src/pages/liturgia-diaria.astro
+[2m09:45:58[22m [34m[200][39m /liturgia-diaria [2m13ms[22m
+[2m09:51:35[22m [34m[watch][39m src/pages/liturgia-diaria.astro
+[2m09:56:43[22m [34m[watch][39m src/pages/liturgia-diaria.astro
+[2m09:58:38[22m [34m[watch][39m src/pages/liturgia-diaria.astro
+[2m10:03:09[22m [34m[watch][39m src/pages/index.astro
+[2m10:03:57[22m [34m[watch][39m src/pages/index.astro
+[2m10:04:42[22m [34m[watch][39m src/pages/index.astro
+[2m10:07:31[22m [34m[watch][39m src/pages/liturgia-diaria.astro
