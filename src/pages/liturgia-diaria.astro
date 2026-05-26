@@ -1,5 +1,6 @@
 ---
 import { SEO } from "astro-seo";
+import { Image } from "astro:assets";
 import GoogleTagManagerHead from "../components/GoogleTagManagerHead.astro";
 import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
 ---
@@ -889,7 +890,7 @@ import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
     <header class="topbar">
       <div class="page-shell topbar-inner">
         <a class="brand" href="/" aria-label="Voltar para a página de links">
-          <img class="brand-mark" src="/ricardo-gonzales.png" alt="Ricardo Gonzales" />
+          <Image src="/ricardo-gonzales.png" alt="Ricardo Gonzales" width={92} height={92} class="brand-mark" format="webp" loading="eager" />
           <span class="brand-title">
             <strong>Liturgia Diária</strong>
             <span>Fé & Filosofia</span>

@@ -1,5 +1,6 @@
 ---
 import { SEO } from "astro-seo";
+import { Image } from "astro:assets";
 import GoogleTagManagerHead from "../components/GoogleTagManagerHead.astro";
 import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
 
@@ -440,7 +441,7 @@ const links = [
     <main class="shell">
       <section class="profile">
         <div class="avatar-wrap">
-          <img class="avatar" src="/ricardo-gonzales.png" alt="Foto de perfil" />
+          <Image src="/ricardo-gonzales.png" alt="Foto de perfil" width={152} height={152} class="avatar" format="webp" loading="eager" />
         </div>
         <h1>Ricardo Gonzales</h1>
         <p class="tagline">Fé & Filosofia</p>
