@@ -1,9 +1,12 @@
 ---
 import { SEO } from "astro-seo";
+import GoogleTagManagerHead from "../components/GoogleTagManagerHead.astro";
+import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
 ---
 
 <html lang="pt-BR" data-theme="dark">
   <head>
+    <GoogleTagManagerHead />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -880,6 +883,7 @@ import { SEO } from "astro-seo";
     </style>
   </head>
   <body>
+    <GoogleTagManagerBody />
     <canvas id="cross-particles" aria-hidden="true"></canvas>
 
     <header class="topbar">

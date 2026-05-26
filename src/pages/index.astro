@@ -1,5 +1,7 @@
 ---
 import { SEO } from "astro-seo";
+import GoogleTagManagerHead from "../components/GoogleTagManagerHead.astro";
+import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
 
 const links = [
   { label: "Ebook Exclusivo", sub: "Renasça em Cristo e liberte-se dos vícios", badge: "EM BREVE", href: "http://ebook.ricardogonzalesoficial.com.br/", icon: "book", target: "_blank" },
@@ -17,6 +19,7 @@ const links = [
 
 <html lang="pt-BR">
   <head>
+    <GoogleTagManagerHead />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -392,6 +395,7 @@ const links = [
   </head>
 
   <body data-theme="dark">
+    <GoogleTagManagerBody />
     <svg width="0" height="0" style="position:absolute">
       <symbol id="icon-book" viewBox="0 0 24 24">
         <path d="M4 5.5a2.5 2.5 0 0 1 2.5-2.5H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/>
