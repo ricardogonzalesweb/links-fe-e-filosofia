@@ -1172,6 +1172,20 @@ import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
       </div>
     </aside>
 
+    <!-- Donation Modal -->
+    <div class="donation-modal" id="donationModal" role="dialog" aria-modal="true" aria-hidden="true">
+      <div class="donation-overlay" id="donationOverlay" tabindex="-1"></div>
+      <div class="donation-content" role="document">
+        <button class="donation-close" id="donationClose" aria-label="Fechar">×</button>
+        <h3>Ajude este projeto</h3>
+        <p>Se este conteúdo é útil para você, considere apoiar com uma doação.</p>
+        <a class="donation-btn" id="donationBtn" href="https://ricardogonzalesoficial.com.br/doacoes" target="_blank" rel="noopener noreferrer">Doar agora</a>
+        <div style="margin-top:0.8rem;">
+          <button id="donationDismiss" type="button" style="background:transparent;border:0;color:var(--muted);font-weight:700;cursor:pointer;">Não mostrar novamente</button>
+        </div>
+      </div>
+    </div>
+
     <script>
       // @ts-nocheck
       const liturgyState = {
@@ -1606,6 +1620,53 @@ import GoogleTagManagerBody from "../components/GoogleTagManagerBody.astro";
         initParticles();
         setDisplayedDate(today);
         fetchLiturgy(today);
+        initDonationModal();
+      }
+
+      /* Donation modal behaviour */
+      function openDonationModal() {
+        const modal = document.getElementById("donationModal");
+        if (!modal) return;
+        modal.classList.add("show");
+        modal.setAttribute("aria-hidden", "false");
+      }
+
+      function closeDonationModal() {
+        const modal = document.getElementById("donationModal");
+        if (!modal) return;
+        modal.classList.remove("show");
+        modal.setAttribute("aria-hidden", "true");
+      }
+
+      function initDonationModal() {
+        const modal = document.getElementById("donationModal");
+        const overlay = document.getElementById("donationOverlay");
+        const closeBtn = document.getElementById("donationClose");
+        const dismiss = document.getElementById("donationDismiss");
+
+        if (!modal) return;
+
+        function shouldShow() {
+          try {
+            return localStorage.getItem("ldDonationDismissed") !== "1";
+          } catch (e) {
+            return true;
+          }
+        }
+
+        if (!shouldShow()) return;
+
+        // show after a short delay
+        setTimeout(() => openDonationModal(), 5200);
+
+        overlay?.addEventListener("click", closeDonationModal);
+        closeBtn?.addEventListener("click", closeDonationModal);
+        dismiss?.addEventListener("click", () => {
+          try {
+            localStorage.setItem("ldDonationDismissed", "1");
+          } catch (e) {}
+          closeDonationModal();
+        });
       }
 
       init();
